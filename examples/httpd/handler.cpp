@@ -8,6 +8,7 @@
 #include "hfile.h"
 #include "hstring.h"
 #include "EventLoop.h" // import setTimeout, setInterval
+#include "hlog.h"
 
 int Handler::preprocessor(HttpRequest* req, HttpResponse* resp) {
     // printf("%s:%d\n", req->client_addr.ip.c_str(), req->client_addr.port);
