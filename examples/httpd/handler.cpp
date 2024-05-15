@@ -160,6 +160,7 @@ int Handler::grpc(HttpRequest* req, HttpResponse* resp) {
 }
 
 int Handler::test(const HttpContextPtr& ctx) {
+	usleep(1000000);
 	hlogi("0x03c5c9ed process_id:%ld, pthread_id:%ld\n", hv_getpid(), (long)hv_gettid());
 	
     ctx->setContentType(ctx->type());
